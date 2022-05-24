@@ -3,4 +3,9 @@ node_js:
   - 7
 before_install:
   - curl -L -f -o /tmp/nexus-iq-cli-latest.jar https://download.sonatype.com/clm/scanner/latest.jar 
- 
+install:
+  - npm install
+script:
+  - npm test
+scan:
+  - java -jar /tmp/nexus-iq-cli-latest.jar -i juiceshop_1 -s https://jbernienexusiq.eu.ngrok.io -a admin:admin1234 -t build .
